@@ -19,7 +19,7 @@
     try {
       const data: Coffee = await getCoffee();
       $apiData = [...$apiData, data];
-      timer = debounce({callBack: addCoffee, timer, timeout: 10000});
+      timer = debounce({callBack: addCoffee, timer, timeout: 30000});
     } catch (e) {
       console.error(e);
     }
