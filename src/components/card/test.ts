@@ -7,8 +7,8 @@ import { render } from '@testing-library/svelte';
 
 import Card from './Card.svelte';
 
-describe('Component List', () => {
-  test('Renders', () => {
+describe('Component Card', () => {
+  test('Render card', () => {
     const { getByText } = render(Card, { coffee: {
         id: 6428,
         uid: "d87426ed-8e68-4f15-9858-5675cdc7e98c",
@@ -17,7 +17,7 @@ describe('Component List', () => {
         variety: "San Ramon",
         notes: "tart, tea-like, cranberry, vanilla, quakery",
         intensifier: "quick"
-      }, index: 1 });
+      }});
     expect(getByText('San Ramon')).toBeInTheDocument();
     expect(getByText('Nuevo Oriente, Guatemala')).toBeInTheDocument();
     expect(getByText('Red America')).toBeInTheDocument();

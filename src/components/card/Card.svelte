@@ -2,7 +2,7 @@
   import Notes from '../notes/Notes.svelte';
   import {createLoadObserver} from './util.ts';
   import Loader from '../loader/Loader.svelte';
-  import "./styles.scss";
+  import './styles.scss';
   import type {Coffee} from '@svelte-app/types/coffee';
   export let coffee: Coffee;
   let isImageLoaded = false;
