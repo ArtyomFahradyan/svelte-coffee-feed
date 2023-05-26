@@ -7,11 +7,11 @@
 {#if relative}
   <div class="relative">
     <div class="spin-wrapper">
-      <div class="loader" />
+      <div class="loader"></div>
     </div>
   </div>
 {:else}
   <div class="spin-wrapper">
-    <div class="loader" />
+    <div class="loader"></div>
   </div>
 {/if}
