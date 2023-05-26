@@ -1,6 +1,6 @@
 <script lang="ts">
   import Notes from '../notes/Notes.svelte';
-  import {createLoadObserver} from './util.ts';
+  import createLoadObserver from '../../utils/createLoadObserver';
   import Loader from '../loader/Loader.svelte';
   import './styles.scss';
   import type {Coffee} from '@svelte-app/types/coffee';
