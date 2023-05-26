@@ -5,7 +5,6 @@
   import "./styles.scss";
   import type {Coffee} from '@svelte-app/types/coffee';
   export let coffee: Coffee;
-  export let index: number;
   let isImageLoaded = false;
   const onload = createLoadObserver(() => {
     isImageLoaded = !isImageLoaded;
@@ -17,12 +16,15 @@
     {#if !isImageLoaded}
       <Loader />
     {/if}
-    <img
-      class="image"
-      use:onload
-      src={`https://loremflickr.com/300/240/coffee,bean/?random=${index}`}
-      alt="Coffee bean"
-    />
+    <div>
+      <p class="intensifier">{coffee.intensifier}</p>
+      <img
+        class="image"
+        use:onload
+        src={`https://loremflickr.com/500/240/coffee,bean/?random=${coffee.id}`}
+        alt="Coffee bean"
+      />
+    </div>
   </div>
   <div class="info">
     <p>{coffee.origin}</p>

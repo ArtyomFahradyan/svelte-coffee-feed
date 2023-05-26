@@ -26,3 +26,11 @@
   padding: 0 8px;
   transition: background 0.15s linear 0s, color 0.15s linear 0s;
 }
+
+@media (min-width:600px) and (max-width:800px) {
+  .list { max-width: 200px; }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .list { max-width: 330px; }
+}

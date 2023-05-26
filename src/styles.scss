@@ -27,6 +27,9 @@ main {
   right: 10px;
   z-index: 3;
 }
-@media (min-width: 600px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
+@media (min-width:600px) and (max-width:1199px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1200px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
 }

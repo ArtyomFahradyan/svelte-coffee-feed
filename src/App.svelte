@@ -40,8 +40,8 @@
     <Loader relative />
   {:else}
     <div class="cards">
-      {#each $apiData as coffee, i}
-        <Card {coffee} index={i} />
+      {#each $apiData as coffee}
+        <Card {coffee} />
       {/each}
     </div>
   {/if}
